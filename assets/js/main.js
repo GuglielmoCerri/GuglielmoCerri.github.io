@@ -104,7 +104,23 @@ let swiper = new Swiper(".portfolio__container", {
         clickable: true,
     },
 });
-
+/*==================== ARTICLES ====================*/
+let swiperarticles = new Swiper(".articles__container", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 40,
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      568: {
+        slidesPerView: 2,
+      },
+    },
+  });
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 

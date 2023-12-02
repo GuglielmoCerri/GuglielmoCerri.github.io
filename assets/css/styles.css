@@ -851,9 +851,6 @@ img{
     justify-self: left;
 }
 
-/*==================== TESTIMONIAL ====================*/
-/* will be added later if needed */
-
 /*==================== CONTACT ME ====================*/
 .contact__container{
     row-gap: 3rem;
@@ -921,7 +918,6 @@ img{
 .card {
     background-color: var(--container-color);
     border-radius: 5px;
-    width: 30%;
     margin: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -946,6 +942,39 @@ img{
     color: var(--first-color);
     font-weight: var(--font-semi-bold);
     font-style: italic;
+}
+
+/*==================== articles ====================*/
+.articles__data,
+.articles__header {
+  display: flex;
+}
+.articles__data {
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-1);
+}
+.articles__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+}
+.articles__name {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+}
+.articles__client {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.articles__description {
+  margin-bottom: var(--mb-2-5);
+}
+.articles__icon-star {
+  color: var(--first-color);
+}
+.swiper-container .swiper-pagination-articles {
+  bottom: 0;
 }
 
 /*==================== FOOTER ====================*/
@@ -1089,6 +1118,19 @@ img{
 
     .project__img{
         width: 400px;
+    }
+    .articles__data,
+    .articles__header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .articles__img {
+      margin-right: 0;
+      margin-bottom: var(--mb-0-25);
+    }
+    .articles__data,
+    .articles__description {
+      text-align: center;
     }
 }
 
