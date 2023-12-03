@@ -816,6 +816,11 @@ img{
     background-color: var(--first-color);
 }
 
+.swiper-pagination-portfolio {
+    height: 1px; 
+    margin-top: -2px ;
+}
+
 .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination-bullet{
@@ -907,7 +912,7 @@ img{
     padding: .25rem .5rem .5rem 0;
 }
 
-/*==================== MEDIUM ARTICLES ====================*/
+/*==================== ARTICLES ====================*/
 
 .card-container {
     display: flex;
@@ -944,7 +949,6 @@ img{
     font-style: italic;
 }
 
-/*==================== articles ====================*/
 .articles__data,
 .articles__header {
   display: flex;
@@ -1340,12 +1344,12 @@ img{
         right: -3.5rem;
     }
     .swiper-container-horizontal >.swiper-pagination-bullets{
-        bottom: -4.5rem;
+        bottom: 0;
     }
-
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
     }
+    
 }
 
 #g-recaptcha-response {
