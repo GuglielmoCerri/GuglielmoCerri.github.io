@@ -212,20 +212,13 @@ window.onload = function() {
   }
 
 // validate all field in the contact form
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var form = document.querySelector('.contact__form');
-
-        form.addEventListener('submit', function (event) {
-            var nameInput = document.getElementById('name');
-            var emailInput = document.getElementById('email');
-            var projectInput = document.getElementById('project-contact');
-            var messageInput = document.getElementById('message-contact');
-
-            if (!nameInput.value || !emailInput.value || !projectInput.value || !messageInput.value) {
-                alert('Please fill in all fields');
-                event.preventDefault(); 
-            }
-        });
-    });
-</script>
+document.getElementById("check").onclick = function() {
+    let allAreFilled = true;
+    document.getElementById("submit_form").querySelectorAll("[required]").forEach(function(i) {
+      if (!allAreFilled) return;
+      if (!i.value) { allAreFilled = false;  return; }
+    })
+    if (!allAreFilled) {
+      alert('Fill all the fields');
+    }
+  };

@@ -957,22 +957,22 @@
                         </div>
                     </div>
                         
-                    <form action="https://formspree.io/f/xbjwkqok" method="POST" class="contact__form grid">
+                    <form action="https://formspree.io/f/xbjwkqok" method="POST" class="contact__form grid" id="submit_form">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="name" class="contact__label">Name</label>
-                                <input type="text" id="name" name="name" class="contact__input">
+                                <input type="text" id="name" name="name" class="contact__input" required>
                             </div>
 
                             <div class="contact__content">
                                 <label for="email" class="contact__label" placeholder="email@example.com">Email</label>
-                                <input type="email" id="email" name="email" class="contact__input">
+                                <input type="email" id="email" name="email" class="contact__input" required>
                             </div>
                         </div>
 
                         <div class="contact__content">
                             <label for="project-contact" class="contact__label">Subject</label>
-                            <input type="text" id="project-contact" name="project" class="contact__input">
+                            <input type="text" id="project-contact" name="project" class="contact__input" required>
                         </div>
 
                         <div class="contact__content">
@@ -984,7 +984,7 @@
                         <div class="g-recaptcha" data-sitekey="6Ldv3yMpAAAAAJBnsyuM_we1OQjiUtK-dUEW5Kdu"></div>
 
                         <div style="text-align: center;">
-                            <button class="button button--flex">
+                            <button class="button button--flex" id="check">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
                             </button>
