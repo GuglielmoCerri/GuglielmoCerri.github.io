@@ -532,6 +532,14 @@ img{
     width: 65%;
 }
 
+.skills__gcp{
+    width: 95%;
+}
+
+.skills__azure{
+    width: 90%;
+}
+
 .skills__docker{
     width: 85%;
 }
