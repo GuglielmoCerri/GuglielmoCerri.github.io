@@ -780,6 +780,14 @@ img{
     border-radius: .5rem;
     justify-self: center;
     object-fit: contain;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 8px hsla(var(--hue-color), 92%, 15%, .08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.portfolio__img:hover{
+    transform: translateY(-.25rem) scale(1.02);
+    box-shadow: 0 6px 16px hsla(var(--hue-color), 92%, 15%, .15);
 }
 
 .portfolio__title{

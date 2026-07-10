@@ -100,18 +100,18 @@ let swiper = new Swiper(".portfolio__container", {
         prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-portfolio",
         clickable: true,
     },
 });
 /*==================== ARTICLES ====================*/
 let swiperarticles = new Swiper(".articles__container", {
     loop: true,
-    grapCursor: true,
+    grabCursor: true,
     spaceBetween: 40,
   
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-articles",
       clickable: true,
       dynamicBullets: true,
     },
